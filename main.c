@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include <time.h>
 
 int main(){
@@ -13,11 +14,11 @@ int main(){
     answer = (rand() % MAX) + MIN;
 
     // Beginning message
-    for(int i = 0; i < 17; i++){
+    for(int i = 0; i < 19; i++){
         printf("*");
     }
     printf("\nNumber guessing game\n");
-    for(int i = 0; i < 17; i++){
+    for(int i = 0; i < 19; i++){
         printf("*");
     }
     
@@ -36,7 +37,12 @@ int main(){
         guesses++;
     }
 
-    printf("\nThe answer was %d, you guessed in %d tries", answer, guesses);
+    printf("\nThe answer was %d, you guessed in %d tries\n", answer, guesses);
+    printf("\nPress any key to exit");
+
+    while(1){
+        if(kbhit()) break;
+    }
     
     return 0;
 }
