@@ -13,11 +13,11 @@ int main(){
     answer = (rand() % MAX) + MIN;
 
     // Beginning message
-    for(int i = 0; i < 12; i++){
+    for(int i = 0; i < 17; i++){
         printf("*");
     }
     printf("\nNumber guessing game\n");
-    for(int i = 0; i < 12; i++){
+    for(int i = 0; i < 17; i++){
         printf("*");
     }
     
